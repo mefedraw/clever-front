@@ -1,0 +1,109 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gradient-background {
+    height: 100%;
+    background: linear-gradient(45deg, #5093e5, #5052e5, #9650e5, #cf50e5);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.modal1 {
+    background-color: rgba(33, 33, 41, 0.788);
+    width: 310px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -225%);
+    border-radius: 30px;
+}
+
+.modal2 {
+    background-color: rgba(33, 33, 41, 0.788);
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(24%, -225%);
+    border-radius: 30px;
+}
+
+.modal3 {
+    background-color: rgba(33, 33, 41, 0.788);
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-173%, -100%);
+    border-radius: 30px;
+}
+
+.modal4 {
+    background-color: rgba(33, 33, 41, 0.788);
+    width: 310px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-29%, -100%);
+    border-radius: 30px;
+}
+
+.modal5 {
+    background-color: rgba(33, 33, 41, 0.788);
+    width: 245px;
+    height: 180px; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-10%, 25%);
+    border-radius: 30px;
+}
+
+.modal6 {
+    background-color: rgba(33, 33, 41, 0.788);
+    width: 245px;
+    height: 180px; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-128%, 25%);
+    border-radius: 30px;
+}
+
+.modal7 {
+    background-color: rgba(33, 33, 41, 0.788);
+    width: 534px;
+    height: 75px; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-59%, 365%);
+    border-radius: 23px;
+}
+
+.icons {
+    width: 45px;
+    margin: 10px 65px auto;
+}
