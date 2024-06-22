@@ -6,22 +6,83 @@
     <link rel="stylesheet" href="main_page.css">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="app_main_page.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@450&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="gradient-background"></div>
     <div class="modal1">
-        <h1><span id="username"></span></h1>
+        <div class="profile">
+            <h4><img src="reqs/user-photo.jpg" alt="User Photo"><span class="gradient-text">@sigma_minion</span></h4>
+            <h5>Баланс <span class="gradient-text">1000</span></h5>
+            <h6>Отвечено на <span class="gradient-text">14/88</span></h6>
+        </div>
     </div>
-    <div class="modal2"></div>
-    <div class="modal3"></div>
-    <div class="modal4"></div>
-    <div class="modal5"></div>
-    <div class="modal6"></div>
-    <div class="modal7">
-        <img src="./reqs/bank_1f3e6.png" class="icons">
-        <img src="./reqs/handshake_1f91d.png" class="icons">
-        <img src="./reqs/right-pointing-magnifying-glass_1f50e.png" class="icons">
-        <!-- friends home info -->
+    <div class="modal2">
+        <div class="main_quest">
+            <h1><span class="gradient-text">Ежедневная Викторина</span></h1>
+            <button class="btn_main_quest">Перейти</button>
+        </div>
     </div>
+    <div class="modal3">
+        <div class="add_quest">
+            <h2><span class="gradient-text">Бонусная Викторина</span></h2>
+            <button class="btn_add_quest">Перейти</button>
+        </div>
+    </div>
+    <div class="modal4">
+        <div class="passive_inc">
+            <h2>Пассивный Доход</h2>
+            <h3>Вы получаете&nbsp<span class="gradient-text">120/час</span></h3>
+            <button class="btn_passive_inc">Перейти</button>
+        </div>
+    </div>
+    <div class="modal5">
+        <div class="leaderboard">
+            <div class="leaderboard-row">
+                <div class="leaderboard-entry">
+                    <img src="reqs/first-place-photo.jpg" alt="First Place Photo" class="leaderboard-photo">
+                    <p class="leaderboard-name gradient-text">Федос</p>
+                    <p class="leaderboard-balance">1500</p>
+                    <p class="leaderboard-answered">88/88</p>
+                </div>
+                <div class="leaderboard-entry">
+                    <img src="reqs/second-place-photo.jpg" alt="Second Place Photo" class="leaderboard-photo">
+                    <p class="leaderboard-name gradient-text">Сигмач</p>
+                    <p class="leaderboard-balance">1400</p>
+                    <p class="leaderboard-answered">80/88</p>
+                </div>
+            </div>
+            <div class="leaderboard-row">
+                <div class="leaderboard-entry">
+                    <img src="reqs/third-place-photo.jpg" alt="Third Place Photo" class="leaderboard-photo">
+                    <p class="leaderboard-name gradient-text">Маша</p>
+                    <p class="leaderboard-balance">1300</p>
+                    <p class="leaderboard-answered">75/88</p>
+                </div>
+                <div class="leaderboard-entry">
+                    <img src="reqs/user-photo.jpg" alt="User Photo" class="leaderboard-photo">
+                    <p class="leaderboard-name gradient-text">Вы</p>
+                    <p class="leaderboard-balance">1000</p>
+                    <p class="leaderboard-answered">14/88</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="modal6">
+        <div class="icon-container">
+            <img src="./reqs/handshake_1f91d.png" class="icons">
+            <p class="icon-label">Friends</p>
+        </div>
+        <div class="icon-container">
+            <img src="./reqs/bank_1f3e6.png" class="icons">
+            <p class="icon-label">Home</p>
+        </div>
+        <div class="icon-container">
+            <img src="./reqs/right-pointing-magnifying-glass_1f50e.png" class="icons">
+            <p class="icon-label">Info</p>
+        </div>
+    </div>    
 </body>
 </html>
