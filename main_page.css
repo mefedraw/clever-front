@@ -178,6 +178,9 @@ h6 {
     font-size: 23px;
     margin-left: 5px;
     margin-top: -30px;
+    display: flex;
+    align-items: center;
+
 }
 
 .balance-text {
@@ -335,9 +338,7 @@ h3 {
 
 .leaderboard-balance {
     margin-top: 0px;
-
 }
-
 
 .leaderboard-place {
     width: 37px;
@@ -378,4 +379,27 @@ h3 {
     margin-left: 5px;
     width: 17px !important; 
     height: auto !important; 
+}
+
+.leaderboard-balance img.quest_mark2 {
+    margin-left: 0px; 
+}
+
+.leaderboard-balance img.coin2 {
+    margin-left: 2px; 
+    margin-right: 8px; 
+}
+
+.leaderboard-balance_user {
+    display: flex;
+    align-items: center;
+}
+
+.leaderboard-balance_user img.quest_mark2 {
+    margin-left: 0px; 
+}
+
+.leaderboard-balance_user img.coin2 {
+    margin-left: 2px; 
+    margin-right: 13px;  
 }
