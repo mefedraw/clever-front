@@ -73,6 +73,10 @@ body, html {
     top: 50%;
     transform: translate(24%, -225%);
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .modal3 {
@@ -84,6 +88,10 @@ body, html {
     top: 50%;
     transform: translate(-173%, -100%);
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .modal4 {
@@ -106,6 +114,7 @@ body, html {
     top: 50%;
     transform: translate(-59%, 25%);
     border-radius: 30px;
+    overflow: hidden;
 }
 
 .modal6 {
@@ -150,8 +159,8 @@ body, html {
     width: 60px;
     height: 60px;
     margin-right: 10px;
-    vertical-align:middle;
-    display:inline-block;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 h4 {
@@ -161,14 +170,19 @@ h4 {
 
 h5 {
     font-size: 23px;
-    margin-top: -15px;
+    margin-top: -33px;
     margin-left: 5px;
 }
 
 h6 {
     font-size: 23px;
     margin-left: 5px;
-    margin-top: -21px;
+    margin-top: -30px;
+}
+
+.balance-text {
+    display: inline-flex;
+    align-items: center;
 }
 
 .main_quest {
@@ -182,7 +196,6 @@ h1 {
     font-size: 26px;
     margin-top: 15px;
     margin-left: 3px;
-    
 }
 
 h2 {
@@ -256,44 +269,113 @@ h3 {
 }
 
 .leaderboard {
-    margin-top: 11px;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 5px;
 }
 
 .leaderboard-row {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
 .leaderboard-entry {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: rgba(33, 33, 41, 0.788);
-    padding: 7px;
+    padding: 5px;
     border-radius: 15px;
-    margin: 2px;
+    margin: 5px;
+    flex-shrink: 0;
+    width: 107px;
+    height: 150px;
+}
+
+.leaderboard-photo-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .leaderboard-photo {
-    width: 50px;
-    height: 50px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 5px;
-    object-fit:cover;
+    z-index: 1000;
+}
+
+.leaderboard-entry.top1 {
+    border: 2px solid rgb(255, 217, 3);
+}
+
+.leaderboard-entry.top2 {
+    border: 2px solid silver;
+}
+
+.leaderboard-entry.top3 {
+    border: 2px solid #FF7F50;
+}
+
+.leaderboard-entry.user-position {
+    border: 2px solid #5093e5;
 }
 
 .leaderboard-name {
-    font-size: 16px;
-    color: #c5cae9;
-    margin-left: 8px;
+    margin-top: 5px;
 }
 
-.leaderboard-balance, .leaderboard-answered {
-    font-size: 14px;
-    color: #c5cae9;
-    margin-left: 10px;
+.leaderboard-balance {
+    margin-top: 0px;
+
+}
+
+
+.leaderboard-place {
+    width: 37px;
+    margin-top: -3px;
+}
+
+.leaderboard-top {
+    margin-top: 10px;
+}
+
+.leaderboard-name_user {
+    margin-top: -7px;
+}
+
+.leaderboard-balance_user {
+    margin-top: 0px;
+}
+
+.coin {
+    margin-left: 5px;
+    width: 47px !important; /* Добавлено !important */
+    height: auto !important; /* Обеспечение сохранения пропорций */
+}
+
+.quest_mark {
+    margin-left: 5px;
+    width: 47px !important; /* Добавлено !important */
+    height: auto !important; /* Обеспечение сохранения пропорций */
+}
+
+.coin2 {
+    margin-left: 5px;
+    width: 18px !important; /* Добавлено !important */
+    height: auto !important; /* Обеспечение сохранения пропорций */
+}
+
+.quest_mark2 {
+    margin-left: 5px;
+    width: 17px !important; /* Добавлено !important */
+    height: auto !important; /* Обеспечение сохранения пропорций */
 }
