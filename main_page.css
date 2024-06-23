@@ -358,24 +358,24 @@ h3 {
 
 .coin {
     margin-left: 5px;
-    width: 47px !important; /* Добавлено !important */
-    height: auto !important; /* Обеспечение сохранения пропорций */
+    width: 47px !important; 
+    height: auto !important;
 }
 
 .quest_mark {
     margin-left: 5px;
-    width: 47px !important; /* Добавлено !important */
-    height: auto !important; /* Обеспечение сохранения пропорций */
+    width: 47px !important;
+    height: auto !important; 
 }
 
 .coin2 {
     margin-left: 5px;
-    width: 18px !important; /* Добавлено !important */
-    height: auto !important; /* Обеспечение сохранения пропорций */
+    width: 18px !important;
+    height: auto !important; 
 }
 
 .quest_mark2 {
     margin-left: 5px;
-    width: 17px !important; /* Добавлено !important */
-    height: auto !important; /* Обеспечение сохранения пропорций */
+    width: 17px !important; 
+    height: auto !important; 
 }
