@@ -86,7 +86,7 @@ body, html {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-173%, -100%);
+    transform: translate(-173%, -107%);
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -96,23 +96,23 @@ body, html {
 
 .modal4 {
     background-color: rgba(33, 33, 41, 0.788);
-    width: 310px;
+    width: 323px;
     height: 180px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-29%, -100%);
+    transform: translate(-32%, -107%);
     border-radius: 30px;
 }
 
 .modal5 {
     background-color: rgba(33, 33, 41, 0.788);
     width: 534px;
-    height: 180px; 
+    height: 220px; 
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-59%, 25%);
+    transform: translate(-59%, 8%);
     border-radius: 30px;
     overflow: hidden;
 }
@@ -124,7 +124,7 @@ body, html {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-59%, 365%);
+    transform: translate(-59%, 360%);
     border-radius: 23px;
     display: flex;
     justify-content: space-around;
@@ -205,7 +205,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center; 
-    font-size: 26px;
+    font-size: 32px;
     margin-top: 15px;
     margin-left: 3px;
 }
@@ -214,7 +214,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center; 
-    font-size: 26px;
+    font-size: 30px;
     margin-top: 15px;
     margin-left: 3px;
 }
@@ -246,6 +246,7 @@ h3 {
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 16px;
     font-family: 'Onest', sans-serif;
+    margin-top: -3px;
 }
 
 .btn_add_quest {
@@ -259,6 +260,7 @@ h3 {
     border-radius: 16px;
     margin-top: 4px;
     font-family: 'Onest', sans-serif;
+    margin-top: -3px;
 }
 
 .btn_passive_inc  {
@@ -269,9 +271,8 @@ h3 {
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 20px; 
-    position: center;
     margin-left: 21px;
-    margin-top: -13px;
+    margin-top: 38px;
     font-family: 'Onest', sans-serif;
 }
 
@@ -285,6 +286,7 @@ h3 {
     flex-direction: row;
     overflow-x: auto;
     padding: 5px;
+    margin-top: 3px;
 }
 
 .leaderboard-row {
@@ -303,7 +305,7 @@ h3 {
     margin: 5px;
     flex-shrink: 0;
     width: 107px;
-    height: 150px;
+    height: 180px;
 }
 
 .leaderboard-photo-container {
@@ -346,7 +348,7 @@ h3 {
 }
 
 .leaderboard-balance {
-    margin-top: 0px;
+    margin-top: -4px;
 }
 
 .leaderboard-place {
@@ -363,7 +365,7 @@ h3 {
 }
 
 .leaderboard-balance_user {
-    margin-top: 0px;
+    margin-top: -5px;
 }
 
 .coin {
@@ -400,8 +402,8 @@ h3 {
 }
 
 .leaderboard-balance_user {
-    display: flex;
-    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 17px;
 }
 
 .leaderboard-balance_user img.quest_mark2 {

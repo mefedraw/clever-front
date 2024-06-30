@@ -55,12 +55,12 @@ body, html {
 
 .modal1 {
     background-color: rgba(33, 33, 41, 0.788);
-    width: 310px;
+    width: 328px;
     height: 180px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-100%, -225%);
+    transform: translate(-95%, -225%);
     border-radius: 30px;
 }
 
@@ -98,7 +98,7 @@ body, html {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-59%, 365%);
+    transform: translate(-59%, 360%);
     border-radius: 23px;
     display: flex;
     justify-content: space-around;
@@ -138,9 +138,8 @@ body, html {
 }
 
 .profile img {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     margin-right: 10px;
     vertical-align: middle;
     display: inline-block;
@@ -149,27 +148,58 @@ body, html {
 h1 {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     font-size: 26px;
     margin-top: 15px;
     margin-left: 3px;
 }
 
+h2 {
+    font-size: 17px;
+    margin-left: 5px;
+    margin-top: -4px;
+}
+
 h4 {
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 0;
 }
 
 h5 {
     font-size: 23px;
-    margin-top: -33px;
     margin-left: 5px;
+    margin-top: 10px;
+}
+
+.blurred {
+    filter: blur(5px);
+}
+
+.visible {
+    filter: none;
+}
+
+.toggle-visibility {
+    cursor: pointer;
+}
+
+.code-container {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-top: -45px;
+    margin-left: 5px;
+    margin-right: -100px;
+}
+
+.code-container h5 {
+    margin: 0 5px 0 0;
 }
 
 h6 {
     font-size: 23px;
     margin-left: 5px;
-    margin-top: -30px;
+    margin-top: -34px;
     display: flex;
     align-items: center;
 
@@ -187,8 +217,8 @@ h6 {
 }
 
 .quest_mark {
-    margin-left: 5px;
-    width: 47px !important;
+    margin-left: 0px;
+    width: 40px !important;
     height: auto !important; 
 }
 
@@ -308,6 +338,23 @@ h6 {
     margin-right: 13px;  
 }
 
-.ur_code {
-    margin-right: 70px; 
+.code-search {
+    margin-top: -8px;
+    text-align: center;
+}
+
+.friend-code-input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px; /* This makes the input field more rounded */
+    border: 1px solid #c5cae9;
+    background-color: rgba(33, 33, 41, 0.788);
+    color: #c5cae9;
+    font-size: 18px;
+    outline: none;
+}
+
+.friend-code-input::placeholder {
+    color: #c5cae9;
+    opacity: 0.7;
 }

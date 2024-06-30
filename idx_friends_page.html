@@ -13,11 +13,29 @@
     <div class="gradient-background"></div>
     <div class="modal1">
         <div class="profile">
-            <h4><img src="reqs/user-photo.jpg" alt="User Photo"><span class="gradient-text">@sigma_minion</span></h4>
-            <h5>Баланс <span class="gradient-text balance-text">1000<img src="reqs/brain_1f9e0.png" class="coin"></span></h5>
-            <h6>Отвечено на&nbsp <span class="gradient-text">14</span><img src="reqs/question-mark_2753.png" class="quest_mark"></h6>
+            <h5>Ваш <span class="gradient-text balance-text">код дружбы</span></h5>
+            <div class="code-container">
+                <h5 id="code" class="blurred">412412444</h5>
+                <img src="./reqs/eye-show-svgrepo-com.svg" class="eye" id="toggleVisibility">
+            </div>
+            <script>
+                document.getElementById('toggleVisibility').addEventListener('click', function () {
+                    var codeElement = document.getElementById('code');
+                    if (codeElement.classList.contains('blurred')) {
+                        codeElement.classList.remove('blurred');
+                        codeElement.classList.add('visible');
+                    } else {
+                        codeElement.classList.remove('visible');
+                        codeElement.classList.add('blurred');
+                    }
+                });
+            </script>
+            <h2>Введите код дружбы того, кому хотите отправить приглашение</h2> 
+            <div class="code-search">
+                <input type="text" class="friend-code-input" placeholder="Введите код дружбы">
+            </div>            
         </div>
-    </div>
+    </div>    
     <div class="modal2">
         <div class="main_quest">
             <h1><span class="gradient-text">Реферальная Система</span></h1>
@@ -26,10 +44,6 @@
     </div>
     <div class="modal5">
         <div class="leaderboard-row">
-            <div class="leaderboard-entry">
-                <p class="ur_code">Твой код: 12c!d1</p>
-                <p class="new_friend">Ввести код друга</p>
-            </div>
             <div class="leaderboard-entry">
                 <div class="leaderboard-photo-container">
                     <img src="reqs/first-place-photo.jpg" class="leaderboard-photo">
@@ -64,7 +78,7 @@
         <a href="idx_friends_page.html" class="icon-link">
             <div class="icon-container">
                 <img src="./reqs/handshake_1f91d.png" class="icons">
-                <p class="icon-label">Friends</p>
+                <p class="icon-label gradient-text">Friends</p>
             </div>
         </a>
         <a href="idx_main_page.html" class="icon-link">
