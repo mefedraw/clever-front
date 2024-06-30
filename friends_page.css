@@ -124,6 +124,15 @@ body, html {
     margin: 7px 65px auto;
 }
 
+.icon-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.icon-link:hover .icon-container {
+    cursor: pointer; 
+}
+
 .profile {
     margin: 10px;
 }

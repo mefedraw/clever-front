@@ -55,12 +55,12 @@ body, html {
 
 .modal1 {
     background-color: rgba(33, 33, 41, 0.788);
-    width: 310px;
+    width: 328px;
     height: 180px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-100%, -225%);
+    transform: translate(-95%, -225%);
     border-radius: 30px;
 }
 
@@ -150,21 +150,30 @@ body, html {
     margin: 7px 65px auto;
 }
 
+.icon-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.icon-link:hover .icon-container {
+    cursor: pointer; 
+}
+
 .profile {
     margin: 10px;
 }
 
 .profile img {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     margin-right: 10px;
     vertical-align: middle;
     display: inline-block;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 0;
 }
 
@@ -177,7 +186,7 @@ h5 {
 h6 {
     font-size: 23px;
     margin-left: 5px;
-    margin-top: -30px;
+    margin-top: -34px;
     display: flex;
     align-items: center;
 
@@ -364,8 +373,8 @@ h3 {
 }
 
 .quest_mark {
-    margin-left: 5px;
-    width: 47px !important;
+    margin-left: 0px;
+    width: 40px !important;
     height: auto !important; 
 }
 
