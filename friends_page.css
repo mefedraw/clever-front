@@ -79,6 +79,21 @@ body, html {
     text-align: center;
 }
 
+.modal3 {
+    background-color: rgba(33, 33, 41, 0.788);
+    width: 534px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-59%, -225%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .modal5 {
     background-color: rgba(33, 33, 41, 0.788);
     width: 534px;
@@ -158,6 +173,10 @@ h2 {
     font-size: 17px;
     margin-left: 5px;
     margin-top: -4px;
+}
+
+h3 {
+    font-size: 17px;
 }
 
 h4 {
@@ -446,11 +465,13 @@ h6 {
     background-color: rgb(2, 2, 27);
     color: #fff;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
     text-align: center;
     margin: 10px auto;
     width: 200px;
+    font-family: 'Onest', sans-serif;
+
 }
 
 .leaderboard-container {
