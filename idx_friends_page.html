@@ -30,9 +30,10 @@
                     }
                 });
             </script>
-            <h2>Введите код дружбы того, кому хотите отправить приглашение</h2> 
+            <h2>Введите <span class="gradient-text balance-text">код дружбы</span> того, кому хотите отправить приглашение</h2> 
             <div class="code-search">
                 <input type="text" class="friend-code-input" placeholder="Введите код дружбы">
+                <button class="invite-btn">Отправить</button> 
             </div>            
         </div>
     </div>    
@@ -42,37 +43,98 @@
             <button class="btn_ref">Перейти</button>
         </div>
     </div>
-    <div class="modal5">
-        <div class="leaderboard-row">
-            <div class="leaderboard-entry">
-                <div class="leaderboard-photo-container">
-                    <img src="reqs/first-place-photo.jpg" class="leaderboard-photo">
+    <div class="modal5">   
+        <div class="toggle-requests-btn">Заявки в друзья</div> 
+        <div class="friend-requests hidden">
+            <div class="request-entry">
+                <div class="request-photo-container">
+                    <img src="./reqs/friendreq-user-photo.jpg" class="request-photo">
                 </div>
-                <p class="leaderboard-name gradient-text">Федос</p>
-                <p class="leaderboard-balance">1500<img src="reqs/brain_1f9e0.png" class="coin2"> 92<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
-            </div>
-            <div class="leaderboard-entry">
-                <div class="leaderboard-photo-container">
-                    <img src="reqs/second-place-photo.jpg" class="leaderboard-photo">
+                <p class="request-name gradient-text">Сая</p>
+                <div class="button-container">
+                    <button class="accept-btn">Принять</button>
+                    <button class="decline-btn">Отклонить</button>
                 </div>
-                <p class="leaderboard-name gradient-text">Сигмач</p>
-                <p class="leaderboard-balance">1400<img src="reqs/brain_1f9e0.png" class="coin2"> 84<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
             </div>
-            <div class="leaderboard-entry">
-                <div class="leaderboard-photo-container">
-                    <img src="reqs/third-place-photo.jpg" class="leaderboard-photo">
+            <div class="request-entry">
+                <div class="request-photo-container">
+                    <img src="./reqs/friendreq-user-photo2.jpg" class="request-photo">
                 </div>
-                <p class="leaderboard-name gradient-text">Маша</p>
-                <p class="leaderboard-balance">1300<img src="reqs/brain_1f9e0.png" class="coin2"> 75<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
-            </div>
-            <div class="leaderboard-entry">
-                <div class="leaderboard-photo-container">
-                    <img src="reqs/user-photo.jpg" class="leaderboard-photo">
+                <p class="request-name gradient-text">Вика</p>
+                <div class="button-container">
+                    <button class="accept-btn">Принять</button>
+                    <button class="decline-btn">Отклонить</button>
                 </div>
-                <p class="leaderboard-name_user gradient-text">Мацуау</p>
-                <p class="leaderboard-balance_user">1000<img src="reqs/brain_1f9e0.png" class="coin2"> 14<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
             </div>
+            <div class="request-entry">
+                <div class="request-photo-container">
+                    <img src="./reqs/friendreq-user-photo3.jpg" class="request-photo">
+                </div>
+                <p class="request-name gradient-text">Юля</p>
+                <div class="button-container">
+                    <button class="accept-btn">Принять</button>
+                    <button class="decline-btn">Отклонить</button>
+                </div>
+            </div>
+        </div>            
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('.toggle-requests-btn').addEventListener('click', function() {
+                    var requests = document.querySelector('.friend-requests');
+                    requests.classList.toggle('hidden');
+                });
+            });
+            </script>                      
+<div class="leaderboard-row">
+    <div class="leaderboard-entry">
+        <div class="leaderboard-photo-container">
+            <img src="reqs/first-place-photo.jpg" class="leaderboard-photo">
         </div>
+        <p class="leaderboard-name gradient-text">Федос</p>
+        <p class="leaderboard-balance">1500<img src="reqs/brain_1f9e0.png" class="coin2"> 92<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
+    </div>
+    <div class="leaderboard-entry">
+        <div class="leaderboard-photo-container">
+            <img src="reqs/second-place-photo.jpg" class="leaderboard-photo">
+        </div>
+        <p class="leaderboard-name gradient-text">Сигмач</p>
+        <p class="leaderboard-balance">1400<img src="reqs/brain_1f9e0.png" class="coin2"> 84<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
+    </div>
+    <div class="leaderboard-entry">
+        <div class="leaderboard-photo-container">
+            <img src="reqs/third-place-photo.jpg" class="leaderboard-photo">
+        </div>
+        <p class="leaderboard-name gradient-text">Маша</p>
+        <p class="leaderboard-balance">1300<img src="reqs/brain_1f9e0.png" class="coin2"> 75<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
+    </div>
+    <div class="leaderboard-entry">
+        <div class="leaderboard-photo-container">
+            <img src="reqs/friendreq-user-photo.jpg" class="leaderboard-photo">
+        </div>
+        <p class="leaderboard-name gradient-text">Саша</p>
+        <p class="leaderboard-balance">1300<img src="reqs/brain_1f9e0.png" class="coin2"> 75<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
+    </div>
+</div>
+
+<div class="friend-requests hidden">
+    <div class="request-entry">
+        <img src="./reqs/friendreq-user-photo.jpg" class="request-photo">
+        <p class="request-name gradient-text">Сая</p>
+        <div>
+            <button class="accept-btn">Принять</button>
+            <button class="decline-btn">Отклонить</button>
+        </div>
+    </div>
+    <div class="request-entry">
+        <img src="./reqs/friendreq-user-photo2.jpg" class="request-photo">
+        <p class="request-name gradient-text">Андрей</p>
+        <div>
+            <button class="accept-btn">Принять</button>
+            <button class="decline-btn">Отклонить</button>
+        </div>
+    </div>
+</div>
+
     </div>        
     <div class="modal6">
         <a href="idx_friends_page.html" class="icon-link">

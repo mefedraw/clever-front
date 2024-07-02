@@ -5,6 +5,8 @@ body, html {
     overflow: hidden;
     color: #c5cae9;
     font-family: 'Onest', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .gradient-background {
@@ -413,4 +415,13 @@ h3 {
 .leaderboard-balance_user img.coin2 {
     margin-left: 2px; 
     margin-right: 13px;  
+}
+
+@media (max-width: 768px) {
+    .modal1, .modal4, .modal5 {
+        width: 95%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        position: fixed;
+    }
 }

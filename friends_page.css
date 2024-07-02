@@ -241,13 +241,33 @@ h6 {
 
 .leaderboard-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10px;
-    flex-direction: column;
-
 }
 
 .leaderboard-entry {
+    flex: 0 0 48%;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    flex-direction: row;
+    vertical-align: middle;
+    background-color: rgba(33, 33, 41, 0.788);
+    padding: 5px;
+    border-radius: 15px;
+    margin: 5px;
+    height: 63px;
+    box-sizing: border-box;
+}
+
+.leaderboard-name, .leaderboard-balance {
+    display: flex;
+    align-items: center;
+}
+
+.request-entry {
+    flex: 0 0 48%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -255,20 +275,20 @@ h6 {
     padding: 5px;
     border-radius: 15px;
     margin: 5px;
-    flex-shrink: 0;
-    height:63px;;
+    box-sizing: border-box;
+    height: 63px;
 }
 
 .leaderboard-photo-container {
-    width: 50px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    flex-shrink: 0;
+    overflow: hidden;
 }
+
 
 .leaderboard-photo {
     width: 100%; 
@@ -276,31 +296,13 @@ h6 {
     object-fit: cover;
     border-radius: 50%;
     z-index: 1000;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .leaderboard-name {
-    margin-top: 5px;
-}
-
-.leaderboard-balance {
-    margin-top: 0px;
-}
-
-.leaderboard-place {
-    width: 37px;
-    margin-top: -3px;
-}
-
-.leaderboard-top {
-    margin-top: 10px;
-}
-
-.leaderboard-name_user {
-    margin-top: -7px;
-}
-
-.leaderboard-balance_user {
-    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .coin2 {
@@ -313,6 +315,13 @@ h6 {
     margin-left: 5px;
     width: 17px !important; 
     height: auto !important; 
+}
+
+.coin2, .quest_mark2 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px; 
+    height: 18px;
 }
 
 .leaderboard-balance img.quest_mark2 {
@@ -346,7 +355,7 @@ h6 {
 .friend-code-input {
     width: 60%;
     padding: 10px;
-    border-radius: 20px; /* This makes the input field more rounded */
+    border-radius: 20px; 
     border: 1px solid #c5cae9;
     background-color: rgba(33, 33, 41, 0.788);
     color: #c5cae9;
@@ -357,4 +366,111 @@ h6 {
 .friend-code-input::placeholder {
     color: #c5cae9;
     opacity: 0.7;
+}
+
+.invite-btn {
+    padding: 10px;
+    background-color: rgb(2, 2, 27);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 7px;
+    font-family: 'Onest', sans-serif;
+}
+
+.invite-btn:hover, .toggle-requests-btn:hover {
+    color: rgb(2, 2, 27);
+    background-color: rgb(204, 196, 236);
+}
+
+.request-name {
+    margin-right: 10px;
+}
+
+.friend-requests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(33, 33, 41, 0.788);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.request-photo-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.request-photo {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.button-container {
+    display: flex;
+    gap: 5px;
+}
+
+.accept-btn, .decline-btn {
+    padding: 5px 15px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.accept-btn {
+    background-color: #4CAF50; 
+    color: white;
+    font-family: 'Onest', sans-serif;
+}
+
+.decline-btn {
+    background-color: #f44336; 
+    color: white;
+    font-family: 'Onest', sans-serif;
+}
+
+.toggle-requests-btn {
+    background-color: rgb(2, 2, 27);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
+    width: 200px;
+}
+
+.leaderboard-container {
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+.leaderboard-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.leaderboard-container {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
 }
