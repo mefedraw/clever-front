@@ -44,8 +44,14 @@
         </div>
     </div>
     <div class="modal3 hidden">
-        <h3>текст</h3>
-    </div>
+        <h3>Правила реферальной системы</h3>
+        <ul class="referral-rules">
+            <li>За приглашённого пользователя вы получаете 1000</li>
+            <li>Если приглашенный пользователь за первый месяц ответит на 50 вопросов, вы получите 1500</li>
+            <li>Топ-5 реферов получают дополнительные награды 30.0000, 40.0000, 60.0000, 80.0000 или 100.000</li>
+            <li>Вы зарабатываете процент от заработка приглашенных пользователей: 10% от дохода первого уровня и 3% от дохода третьего уровня</li>
+        </ul>
+    </div>    
     <div class="modal5">   
         <div class="toggle-requests-btn">Заявки в друзья</div> 
         <div class="friend-requests hidden">
@@ -90,6 +96,7 @@
                 document.querySelector('.btn_ref').addEventListener('click', function() {
                     document.querySelector('.modal1').classList.add('hidden');
                     document.querySelector('.modal2').classList.add('hidden');
+                    document.querySelector('.modal5').classList.add('hidden');
                     document.querySelector('.modal3').classList.remove('hidden');
                 });
             });
