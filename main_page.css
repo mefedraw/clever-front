@@ -242,7 +242,6 @@ h3 {
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 20px; 
-    margin-left: 21px;
     margin-top: 38px;
     font-family: 'Onest', sans-serif;
 }
@@ -332,7 +331,7 @@ h3 {
 }
 
 .leaderboard-balance_user {
-    margin-top: -5px;
+    margin-top: -4px;
 }
 
 .coin {
@@ -369,7 +368,6 @@ h3 {
 }
 
 .leaderboard-balance_user {
-    margin-left: 5px;
     margin-bottom: 17px;
 }
 
@@ -379,7 +377,6 @@ h3 {
 
 .leaderboard-balance_user img.coin2 {
     margin-left: 2px; 
-    margin-right: 13px;  
 }
 
 .container-center {
@@ -448,6 +445,57 @@ h3 {
 }
 
 @media (max-width: 480px){
+    .container-center {
+        width:95%;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .profile img {
+        width: 45px;
+        height: 45px;
+        margin-right:4px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    .btn_main_quest {
+        padding: 12px 8px;
+    }
+    h5 {
+        font-size: 20px;
+        position:relative;
+        bottom: -12px;
+    }
+    h6 {
+        font-size: 20px;
+        position:relative;
+        bottom: -24px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .btn_add_quest {
+        padding: 12px 8px;
+    }
+    .btn_passive_inc {
+        padding: 12px 47px;
+    }
+    .leaderboard-entry {
+        padding: 0;
+    }
+    .icons {
+        margin: 0;
+        position: relative;
+        bottom: -4px;
+    }
+    .icon-label {
+        position: relative;
+        bottom: -1px;
+        margin: 5px;  
+    }
 }
 
 /* до 380 */
