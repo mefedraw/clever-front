@@ -1,3 +1,5 @@
+@import url(vars.css);
+
 body, html {
     height: 100%;
     padding: 0;
@@ -52,18 +54,22 @@ body {
   font-style: normal;
 }
 
-.modal1 {
+.base-wrapper{
     background-color: rgba(33, 33, 41, 0.788);
-    width: 60%;
-    height: 180px;
     border-radius: 30px;
+
+    width: 10%;
+    height: 180px;
 }
 
-.modal2 {
-    background-color: rgba(33, 33, 41, 0.788);
+.user-info-wrapper {
+    width: 60%;
+}
+
+
+
+.bonus-store{
     width: 35%;
-    height: 180px;
-    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,11 +136,11 @@ body {
     cursor: pointer; 
 }
 
-.profile {
+.user-info {
     margin: 10px;
 }
 
-.profile img {
+.user-info img {
     border-radius: 50%;
     width: 65px;
     height: 65px;
@@ -409,7 +415,7 @@ h3 {
     .btn_main_quest {
         padding: 12px 18px;
     }
-    .profile img {
+    .user-info img {
         width: 50px;
         height: 50px;
     }
@@ -453,7 +459,7 @@ h3 {
     h4 {
         font-size: 20px;
     }
-    .profile img {
+    .user-info img {
         width: 45px;
         height: 45px;
         margin-right:4px;

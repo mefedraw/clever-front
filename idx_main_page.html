@@ -11,97 +11,101 @@
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@450&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-center">
+<div class="container-center">
     <div class="flex-modals">
-    <div class="modal1">
-        <div class="profile">
-            <h4><img src="reqs/user-photo.jpg" alt="User Photo"><span class="gradient-text">@sigma_minion</span></h4>
-            <h5>Баланс <span class="gradient-text balance-text">1000<img src="reqs/brain_1f9e0.png" class="coin"></span></h5>
-            <h6>Отвечено на&nbsp <span class="gradient-text">14</span><img src="reqs/question-mark_2753.png" class="quest_mark"></h6>
+        <div class="base-wrapper user-info-wrapper">
+            <div class="user-info">
+                <div class="user-photo"><img src="reqs/user-photo.jpg" alt="User Photo"><span class="gradient-text">@sigma_minion</span>
+                </div>
+                <h5>Баланс <span class="gradient-text balance-text">1000<img src="reqs/brain_1f9e0.png"
+                                                                             class="coin"></span></h5>
+                <h6>Отвечено на&nbsp <span class="gradient-text">14</span><img src="reqs/question-mark_2753.png"
+                                                                               class="quest_mark"></h6>
+            </div>
         </div>
-    </div>
-    <div class="modal2">
-        <div class="main_quest">
-            <h2><span class="gradient-text">Магазин Бонусов</span></h2>
-            <button class="btn_main_quest">Перейти</button>
+        <div class="base-wrapper bonus-store-wrapper">
+            <div class="bonus-store">
+                <h2><span class="gradient-text">Магазин Бонусов</span></h2>
+                <button class="btn_main_quest">Перейти</button>
+            </div>
         </div>
-    </div>
     </div>
     <div class="flex-modals">
-    <div class="modal3">
-        <div class="add_quest">
-            <h2><span class="gradient-text">Бонусная Викторина</span></h2>
-            <button class="btn_add_quest">Перейти</button>
+        <div class="base-wrapper bonus-quest-wrapper">
+            <div class="bonus-quest">
+                <h2><span class="gradient-text">Бонусная Викторина</span></h2>
+                <button class="btn_add_quest">Перейти</button>
+            </div>
+        </div>
+        <div class="base-wrapper main-quest-wrapper">
+            <div class="main_quest">
+                <h1><span class="gradient-text">Главная Викторина</span></h1>
+                <button class="btn_passive_inc">Перейти</button>
+            </div>
         </div>
     </div>
-    <div class="modal4">
-        <div class="passive_inc">
-            <h1><span class="gradient-text">Главная Викторина</span></h1>
-            <button class="btn_passive_inc">Перейти</button>
+    <div class="base-wrapper leaderboard-wrapper">
+        <div class="leaderboard__row">
+            <div class="leaderboard__entry leaderboard__entry--top1">
+                <div class="leaderboard__photo-container">
+                    <img src="reqs/first-place-photo.jpg" class="leaderboard__photo">
+                </div>
+                <img src="reqs/1st-place-medal_1f947.png" class="leaderboard__place">
+                <p class="leaderboard__name leaderboard__name--gradient">Федос</p>
+                <p class="leaderboard__balance">1500<img src="reqs/brain_1f9e0.png" class="leaderboard__coin"></p>
+                <p class="leaderboard__balance">92<img src="reqs/question-mark_2753.png" class="leaderboard__quest-mark"></p>
+            </div>
+            <div class="leaderboard__entry leaderboard__entry--top2">
+                <div class="leaderboard__photo-container">
+                    <img src="reqs/second-place-photo.jpg" class="leaderboard__photo">
+                </div>
+                <img src="reqs/2nd-place-medal_1f948.png" class="leaderboard__place">
+                <p class="leaderboard__name leaderboard__name--gradient">Сигмач</p>
+                <p class="leaderboard__balance">1400<img src="reqs/brain_1f9e0.png" class="leaderboard__coin"></p>
+                <p class="leaderboard__balance">84<img src="reqs/question-mark_2753.png" class="leaderboard__quest-mark"></p>
+            </div>
+            <div class="leaderboard__entry leaderboard__entry--top3">
+                <div class="leaderboard__photo-container">
+                    <img src="reqs/third-place-photo.jpg" class="leaderboard__photo">
+                </div>
+                <img src="reqs/3rd-place-medal_1f949.png" class="leaderboard__place">
+                <p class="leaderboard__name leaderboard__name--gradient">Маша</p>
+                <p class="leaderboard__balance">1300<img src="reqs/brain_1f9e0.png" class="leaderboard__coin"></p>
+                <p class="leaderboard__balance">75<img src="reqs/question-mark_2753.png" class="leaderboard__quest-mark"></p>
+            </div>
+            <div class="leaderboard__entry leaderboard__entry--user-position">
+                <div class="leaderboard__photo-container">
+                    <img src="reqs/user-photo.jpg" class="leaderboard__photo">
+                </div>
+                <p class="leaderboard__top leaderboard__top--gradient">#239</p>
+                <p class="leaderboard__name leaderboard__name--user leaderboard__name--gradient">Вы</p>
+                <p class="leaderboard__balance leaderboard__balance--user">1000<img src="reqs/brain_1f9e0.png" class="leaderboard__coin"></p>
+                <p class="leaderboard__balance">14<img src="reqs/question-mark_2753.png" class="leaderboard__quest-mark"></p>
+            </div>
         </div>
     </div>
-    </div>
-    <div class="modal5">
-        <div class="leaderboard">
-            <div class="leaderboard-row">
-                <div class="leaderboard-entry top1">
-                    <div class="leaderboard-photo-container">
-                        <img src="reqs/first-place-photo.jpg" class="leaderboard-photo">
-                    </div>
-                    <img src="reqs/1st-place-medal_1f947.png" class="leaderboard-place">
-                    <p class="leaderboard-name gradient-text">Федос</p>
-                    <p class="leaderboard-balance">1500<img src="reqs/brain_1f9e0.png" class="coin2"></p>
-                    <p class="leaderboard-balance">92<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
+
+    <div class="base-wrapper menu-wrapper">
+        <div class="menu">
+            <a href="idx_friends_page.html" class="icon-link">
+                <div class="icon-container">
+                    <img src="./reqs/handshake_1f91d.png" class="icons">
+                    <p class="icon-label">Friends</p>
                 </div>
-                <div class="leaderboard-entry top2">
-                    <div class="leaderboard-photo-container">
-                        <img src="reqs/second-place-photo.jpg" class="leaderboard-photo">
-                    </div>
-                    <img src="reqs/2nd-place-medal_1f948.png" class="leaderboard-place">
-                    <p class="leaderboard-name gradient-text">Сигмач</p>
-                    <p class="leaderboard-balance">1400<img src="reqs/brain_1f9e0.png" class="coin2"></p>
-                    <p class="leaderboard-balance">84<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
+            </a>
+            <a href="idx_main_page.html" class="icon-link">
+                <div class="icon-container">
+                    <img src="./reqs/bank_1f3e6.png" class="icons">
+                    <p class="icon-label gradient-text">Home</p>
                 </div>
-                <div class="leaderboard-entry top3">
-                    <div class="leaderboard-photo-container">
-                        <img src="reqs/third-place-photo.jpg" class="leaderboard-photo">
-                    </div>
-                    <img src="reqs/3rd-place-medal_1f949.png" class="leaderboard-place">
-                    <p class="leaderboard-name gradient-text">Маша</p>
-                    <p class="leaderboard-balance">1300<img src="reqs/brain_1f9e0.png" class="coin2"></p>
-                    <p class="leaderboard-balance">75<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
+            </a>
+            <a href="idx_tasks_page.html" class="icon-link">
+                <div class="icon-container">
+                    <img src="./reqs/money-with-wings_1f4b8.png" class="icons">
+                    <p class="icon-label">Tasks</p>
                 </div>
-                <div class="leaderboard-entry user-position">
-                    <div class="leaderboard-photo-container">
-                        <img src="reqs/user-photo.jpg" class="leaderboard-photo">
-                    </div>
-                    <p class="leaderboard-top gradient-text">#239</p>
-                    <p class="leaderboard-name_user gradient-text">Вы</p>
-                    <p class="leaderboard-balance_user">1000<img src="reqs/brain_1f9e0.png" class="coin2"></p>
-                    <p class="leaderboard-balance">14<img src="reqs/question-mark_2753.png" class="quest_mark2"></p>
-                </div>
-            </div>
-        </div>        
-    </div>
-    <div class="modal6">
-        <a href="idx_friends_page.html" class="icon-link">
-            <div class="icon-container">
-                <img src="./reqs/handshake_1f91d.png" class="icons">
-                <p class="icon-label">Friends</p>
-            </div>
-        </a>
-        <a href="idx_main_page.html" class="icon-link">
-            <div class="icon-container">
-                <img src="./reqs/bank_1f3e6.png" class="icons">
-                <p class="icon-label gradient-text">Home</p>
-            </div>
-        </a>
-        <a href="idx_tasks_page.html" class="icon-link">
-            <div class="icon-container">
-                <img src="./reqs/money-with-wings_1f4b8.png" class="icons">
-                <p class="icon-label">Tasks</p>
-            </div>
-        </a>
+            </a>
+        </div>
     </div>
 </div>
 </body>
