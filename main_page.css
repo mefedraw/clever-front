@@ -135,6 +135,7 @@ body {
 }
 
 .bonus-quest-wrapper {
+    margin-top: calc(var(--index) * 1.4);
     width: 36%;
     margin-bottom: calc(var(--index) * 38);
 }
@@ -155,6 +156,7 @@ body {
 }
 
 .main-quest-wrapper{
+    margin-top: calc(var(--index) * 1.4);
     width: 60%;
 }
 
