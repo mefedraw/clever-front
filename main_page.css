@@ -13,6 +13,8 @@ body {
     background: linear-gradient(45deg, #5093e5, #5052e5, #9650e5, #cf50e5);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
+
+    font-family: 'Onest', sans-serif;
 }
 
 @keyframes gradientAnimation {
@@ -28,7 +30,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(45deg,#9650e5, #cf50e5, #5093e5, #4749a0);
+    background: linear-gradient(45deg, #9650e5, #cf50e5, #5093e5, #4749a0);
     background-size: 400% 400%;
     animation: gradientTextAnimation 15s ease infinite;
     -webkit-background-clip: text;
@@ -48,13 +50,13 @@ body {
 }
 
 .onest-fontik {
-  font-family: 'Onest', sans-serif;
-  font-optical-sizing: auto;
-  font-weight:300;
-  font-style: normal;
+    font-family: 'Onest', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.base-wrapper{
+.base-wrapper {
     background-color: rgba(33, 33, 41, 0.788);
     border-radius: 30px;
 
@@ -66,25 +68,110 @@ body {
     width: 60%;
 }
 
+.user-info__photo {
+    width: calc(var(--index) * 5);
+    height: calc(var(--index) * 5);
+    border-radius: 50%;
+}
 
-
-.bonus-store{
-    width: 35%;
+.user-info__photo-nick-line {
     display: flex;
+    align-items: center;
+}
+
+.user-info__nickname {
+    font-size: calc(var(--index) * 1.6);
+    margin-bottom: calc(var(--index) * 1.5);
+}
+
+.balance-line {
+    margin-top: calc(var(--index) * -.5);
+    font-size: calc(var(--index) * 1.7);
+    font-weight: 600;
+}
+
+.balance-line__coin {
+    margin-bottom: calc(var(--index) * .5);
+}
+
+.balance-line__text {
+    font-size: calc(var(--index) * 1.6);
+}
+
+.quest-line {
+    height: calc(var(--index) * .1);
+    margin-top: calc(var(--index));
+    font-weight: 600;
+    font-size: calc(var(--index) * 1.6);
+}
+
+.bonus-store-wrapper {
+    width: 36%;
+}
+
+.bonus-store {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.modal3 {
-    background-color: rgba(33, 33, 41, 0.788);
-    width: 35%;
-    height: 180px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bonus-store__title {
+    font-weight: 600;
+    margin-top: calc(var(--index) * 1.5);
+    font-size: calc(var(--index) * 2);
+}
+
+.bonus-store__btn {
+    margin-top: calc(var(--index) * 2.2);
+    font-size: calc(var(--index) * 2);
+    background-color: rgb(2, 2, 27);
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 16px;
+    font-family: 'Onest', sans-serif;
+}
+
+.bonus-quest-wrapper {
+    width: 36%;
+    margin-bottom: calc(var(--index) * 38);
+}
+
+.bonus-quest {
     text-align: center;
+}
+
+.bonus-quest__btn {
+    margin: calc(var(--index) * 1.6) calc(var(--index) * .6) calc(var(--index) * 1.8);
+    background-color: rgb(2, 2, 27);
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 16px;
+    font-family: 'Onest', sans-serif;
+    font-size: calc(var(--index) * 1.7);
+}
+
+.main-quest-wrapper{
+    width: 60%;
+}
+
+.main-quest{
+    font-weight: 700;
+    font-size: calc(var(--index) * 3);
+}
+
+.main-quest__btn{
+    margin: calc(var(--index) * 1.6) calc(var(--index) * .6) calc(var(--index) * 1.8);
+    background-color: rgb(2, 2, 27);
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 16px;
+    font-family: 'Onest', sans-serif;
+    font-size: calc(var(--index) * 1.7);
 }
 
 .modal4 {
@@ -128,12 +215,12 @@ body {
 }
 
 .icon-link {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
 }
 
 .icon-link:hover .icon-container {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .user-info {
@@ -174,14 +261,10 @@ h6 {
     align-items: center;
 }
 
-.main_quest {
-    margin: 10px;
-}
-
 h1 {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     font-size: 32px;
     margin-top: 15px;
     margin-left: 3px;
@@ -190,7 +273,7 @@ h1 {
 h2 {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     font-size: 30px;
     margin-top: 15px;
     margin-left: 3px;
@@ -202,7 +285,7 @@ h3 {
     margin-left: 5px;
     margin-top: 5px;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .add_quest {
@@ -213,46 +296,19 @@ h3 {
     margin: 10px;
 }
 
-.btn_main_quest {
-    margin: 7px;
-    padding: 12px 24px;
-    font-size: 25px;
-    background-color: rgb(2, 2, 27);
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 16px;
-    font-family: 'Onest', sans-serif;
-    margin-top: -3px;
-}
-
-.btn_add_quest {
-    margin: 7px;
-    padding: 12px 24px;
-    font-size: 25px;
-    background-color: rgb(2, 2, 27);
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 16px;
-    margin-top: 4px;
-    font-family: 'Onest', sans-serif;
-    margin-top: -3px;
-}
-
-.btn_passive_inc  {
+.btn_passive_inc {
     padding: 12px 75px;
     font-size: 25px;
     background-color: rgb(2, 2, 27);
     color: rgb(255, 255, 255);
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 20px; 
+    border-radius: 20px;
     margin-top: 38px;
     font-family: 'Onest', sans-serif;
 }
 
-.btn_main_quest:hover, .btn_add_quest:hover, .btn_passive_inc:hover {
+.bonus-store__btn:hover, .bonus-quest__btn:hover, .main-quest__btn:hover {
     color: rgb(2, 2, 27);
     background-color: rgb(204, 196, 236);
 }
@@ -292,8 +348,8 @@ h3 {
 }
 
 .leaderboard-photo {
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 50%;
     z-index: 1000;
@@ -342,35 +398,35 @@ h3 {
 
 .coin {
     margin-left: 5px;
-    width: 47px !important; 
+    width: 47px !important;
     height: auto !important;
 }
 
 .quest_mark {
     margin-left: 0px;
     width: 40px !important;
-    height: auto !important; 
+    height: auto !important;
 }
 
 .coin2 {
     margin-left: 5px;
     width: 18px !important;
-    height: auto !important; 
+    height: auto !important;
 }
 
 .quest_mark2 {
     margin-left: 5px;
-    width: 17px !important; 
-    height: auto !important; 
+    width: 17px !important;
+    height: auto !important;
 }
 
 .leaderboard-balance img.quest_mark2 {
-    margin-left: 0px; 
+    margin-left: 0px;
 }
 
 .leaderboard-balance img.coin2 {
-    margin-left: 2px; 
-    margin-right: 8px; 
+    margin-left: 2px;
+    margin-right: 8px;
 }
 
 .leaderboard-balance_user {
@@ -378,11 +434,11 @@ h3 {
 }
 
 .leaderboard-balance_user img.quest_mark2 {
-    margin-left: 0px; 
+    margin-left: 0px;
 }
 
 .leaderboard-balance_user img.coin2 {
-    margin-left: 2px; 
+    margin-left: 2px;
 }
 
 .container-center {
@@ -400,107 +456,130 @@ h3 {
     justify-content: space-between;
 }
 
-@media (max-width: 760px){
+@media (max-width: 760px) {
     .container-center {
-        width:90%;
+        width: 90%;
         padding-top: 15px;
         padding-bottom: 10px;
     }
+
     h4 {
         font-size: 24px;
     }
+
     h2 {
         font-size: 27px;
     }
-    .btn_main_quest {
+
+    .bonus-store__btn {
         padding: 12px 18px;
     }
+
     .user-info img {
         width: 50px;
         height: 50px;
     }
+
     h6 {
-        position:relative;
+        position: relative;
         bottom: -12px;
     }
+
     h1 {
         font-size: 25px;
     }
+
     .btn_add_quest {
         padding: 12px 18px;
     }
+
     .btn_passive_inc {
         width: 100%;
         margin: 0;
         position: relative;
         bottom: -46px;
     }
+
     .leaderboard-entry {
         padding: 0;
     }
+
     .icons {
         margin: 0;
         position: relative;
         bottom: -4px;
     }
+
     .icon-label {
         position: relative;
         bottom: -1px;
-        margin: 5px;  
+        margin: 5px;
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .container-center {
-        width:95%;
+        width: 95%;
         padding-top: 15px;
         padding-bottom: 10px;
     }
+
     h4 {
         font-size: 20px;
     }
+
     .user-info img {
         width: 45px;
         height: 45px;
-        margin-right:4px;
+        margin-right: 4px;
     }
+
     h2 {
         font-size: 23px;
     }
-    .btn_main_quest {
+
+    .bonus-store__btn {
         padding: 12px 8px;
     }
+
     h5 {
         font-size: 20px;
-        position:relative;
+        position: relative;
         bottom: -12px;
     }
+
     h6 {
         font-size: 20px;
-        position:relative;
+        position: relative;
         bottom: -24px;
     }
+
     h1 {
         font-size: 20px;
     }
+
     .btn_add_quest {
         padding: 12px 8px;
     }
+
     .btn_passive_inc {
         padding: 12px 47px;
     }
+
     .leaderboard-entry {
         padding: 0;
     }
+
     .icons {
         margin: 0;
         position: relative;
         bottom: -4px;
     }
+
     .icon-label {
         position: relative;
         bottom: -1px;
-        margin: 5px;  
+        margin: 5px;
     }
 }
 
