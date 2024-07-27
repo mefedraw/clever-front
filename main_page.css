@@ -141,11 +141,14 @@ body {
 }
 
 .bonus-quest {
+    margin-top: calc(var(--index) * 1.6);
     text-align: center;
+    font-size: calc(var(--index) * 1.8);
+    font-weight: 600;
 }
 
 .bonus-quest__btn {
-    margin: calc(var(--index) * 1.6) calc(var(--index) * .6) calc(var(--index) * 1.8);
+    margin: calc(var(--index) * 5.5) calc(var(--index) * .6) calc(var(--index) * 1.8);
     background-color: rgb(2, 2, 27);
     color: rgb(255, 255, 255);
     border: none;
@@ -155,26 +158,33 @@ body {
     font-size: calc(var(--index) * 1.7);
 }
 
-.main-quest-wrapper{
+.main-quest-wrapper {
     margin-top: calc(var(--index) * 1.4);
     width: 60%;
 }
 
-.main-quest{
+.main-quest {
+    text-align: center;
     font-weight: 700;
-    font-size: calc(var(--index) * 3);
+    font-size: calc(var(--index) * 1.95);
+    margin-top: calc(var(--index) * 1.5);
 }
 
-.main-quest__btn{
-    margin: calc(var(--index) * 1.6) calc(var(--index) * .6) calc(var(--index) * 1.8);
+.main-quest__btn {
+    padding: calc(var(--index) * 1) calc(var(--index) * -2);
     background-color: rgb(2, 2, 27);
     color: rgb(255, 255, 255);
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 16px;
     font-family: 'Onest', sans-serif;
-    font-size: calc(var(--index) * 1.7);
+    font-size: calc(var(--index) * 1.8);
+    white-space: normal;
+    width: calc(var(--index) * 19);
+    margin-top: calc(var(--index) * 7.8);
+    text-align: center;
 }
+
 
 .modal4 {
     background-color: rgba(33, 33, 41, 0.788);
