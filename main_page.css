@@ -59,399 +59,76 @@ body {
 .base-wrapper {
     background-color: rgba(33, 33, 41, 0.788);
     border-radius: 30px;
-
-    width: 10%;
-    height: 180px;
 }
 
-.user-info-wrapper {
-    width: 60%;
-}
-
-.user-info__photo {
-    width: calc(var(--index) * 5);
-    height: calc(var(--index) * 5);
-    border-radius: 50%;
-}
-
-.user-info__photo-nick-line {
-    display: flex;
-    align-items: center;
-}
-
-.user-info__nickname {
-    font-size: calc(var(--index) * 1.6);
-    margin-bottom: calc(var(--index) * 1.5);
-}
-
-.balance-line {
-    margin-top: calc(var(--index) * -.5);
-    font-size: calc(var(--index) * 1.7);
-    font-weight: 600;
-}
-
-.balance-line__coin {
-    margin-bottom: calc(var(--index) * .5);
-}
-
-.balance-line__text {
-    font-size: calc(var(--index) * 1.6);
-}
-
-.quest-line {
-    height: calc(var(--index) * .1);
-    margin-top: calc(var(--index));
-    font-weight: 600;
-    font-size: calc(var(--index) * 1.6);
-}
-
-.bonus-store-wrapper {
-    width: 36%;
-}
-
-.bonus-store {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.bonus-store__title {
-    font-weight: 600;
-    margin-top: calc(var(--index) * 1.5);
-    font-size: calc(var(--index) * 2);
-}
-
-.bonus-store__btn {
-    margin-top: calc(var(--index) * 2.2);
-    font-size: calc(var(--index) * 2);
-    background-color: rgb(2, 2, 27);
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 16px;
-    font-family: 'Onest', sans-serif;
-}
-
-.bonus-quest-wrapper {
-    margin-top: calc(var(--index) * 1.4);
-    width: 36%;
-    margin-bottom: calc(var(--index) * 38);
-}
-
-.bonus-quest {
-    margin-top: calc(var(--index) * 1.6);
-    text-align: center;
-    font-size: calc(var(--index) * 1.8);
-    font-weight: 600;
-}
-
-.bonus-quest__btn {
-    margin: calc(var(--index) * 5.5) calc(var(--index) * .6) calc(var(--index) * 1.8);
-    background-color: rgb(2, 2, 27);
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 16px;
-    font-family: 'Onest', sans-serif;
-    font-size: calc(var(--index) * 1.7);
-}
-
-.main-quest-wrapper {
-    margin-top: calc(var(--index) * 1.4);
-    width: 60%;
-}
-
-.main-quest {
-    text-align: center;
-    font-weight: 700;
-    font-size: calc(var(--index) * 1.95);
-    margin-top: calc(var(--index) * 1.5);
-}
-
-.main-quest__btn {
-    padding: calc(var(--index) * 1) calc(var(--index) * -2);
-    background-color: rgb(2, 2, 27);
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 16px;
-    font-family: 'Onest', sans-serif;
-    font-size: calc(var(--index) * 1.8);
-    white-space: normal;
-    width: calc(var(--index) * 19);
-    margin-top: calc(var(--index) * 7.8);
-    text-align: center;
-}
-
-
-.modal4 {
-    background-color: rgba(33, 33, 41, 0.788);
-    width: 60%;
-    height: 180px;
-    border-radius: 30px;
-}
-
-.modal5 {
-    background-color: rgba(33, 33, 41, 0.788);
-    width: 100%;
-    border-radius: 30px;
-}
-
-.modal6 {
-    background-color: rgba(33, 33, 41, 0.788);
-    width: 100%;
-    border-radius: 23px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.icon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.icon-label {
-    font-size: 15px;
-    color: #c5cae9;
-    text-align: center;
-    margin-top: 2px;
-}
-
-.icons {
-    width: 40px;
-    margin: 7px 65px auto;
-}
-
-.icon-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.icon-link:hover .icon-container {
-    cursor: pointer;
+.main-page-grid {
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "user-info"
+    "bonus-store"
+    "bonus-quest"
+    "main-quest"
+    "leaderboard"
+    "menu";
 }
 
 .user-info {
-    margin: 10px;
+    grid-area: user-info;
 }
 
-.user-info img {
-    border-radius: 50%;
-    width: 65px;
-    height: 65px;
-    margin-right: 10px;
-    vertical-align: middle;
-    display: inline-block;
+.bonus-store {
+    grid-area: bonus-store;
 }
 
-h4 {
-    font-size: 30px;
-    margin-top: 0;
+.bonus-quest {
+    grid-area: bonus-quest;
 }
 
-h5 {
-    font-size: 23px;
-    margin-top: -33px;
-    margin-left: 5px;
-}
-
-h6 {
-    font-size: 23px;
-    margin-left: 5px;
-    margin-top: -34px;
-    display: flex;
-    align-items: center;
-
-}
-
-.balance-text {
-    display: inline-flex;
-    align-items: center;
-}
-
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    margin-top: 15px;
-    margin-left: 3px;
-}
-
-h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    margin-top: 15px;
-    margin-left: 3px;
-}
-
-h3 {
-    display: flex;
-    font-size: 22px;
-    margin-left: 5px;
-    margin-top: 5px;
-    align-items: center;
-    justify-content: center;
-}
-
-.add_quest {
-    margin: 10px;
-}
-
-.passive_inc {
-    margin: 10px;
-}
-
-.btn_passive_inc {
-    padding: 12px 75px;
-    font-size: 25px;
-    background-color: rgb(2, 2, 27);
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 20px;
-    margin-top: 38px;
-    font-family: 'Onest', sans-serif;
-}
-
-.bonus-store__btn:hover, .bonus-quest__btn:hover, .main-quest__btn:hover {
-    color: rgb(2, 2, 27);
-    background-color: rgb(204, 196, 236);
+.main-quest {
+    grid-area: main-quest;
 }
 
 .leaderboard {
-    padding: 5px;
-    margin-top: 3px;
+    grid-area: leaderboard;
 }
 
-.leaderboard-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.menu {
+    grid-area: menu;
 }
 
-.leaderboard-entry {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(33, 33, 41, 0.788);
-    padding: 5px;
-    border-radius: 15px;
-    margin: 5px;
-    flex-shrink: 0;
-    width: 21%;
-    height: 180px;
+@media (min-width: 320px) {
+    .main-page-grid {
+        grid-template-columns: 4fr 2fr;
+        grid-template-areas:
+        "user-info bonus-store"
+        "bonus-quest main-quest"
+        "leaderboard leaderboard"
+        "menu menu";
+        grid-template-rows: 20% 20% 25% 10%;
+        /*
+        0.25fr 0.25fr 0.55fr 0.1fr;
+        */
+    }
 }
 
-.leaderboard-photo-container {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.leaderboard-photo {
-    width: 100%;
+.leaderboard {
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    z-index: 1000;
 }
 
-.leaderboard-entry.top1 {
-    border: 2px solid rgb(255, 217, 3);
+.leaderboard-subitems {
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    grid-gap: 2px;
 }
 
-.leaderboard-entry.top2 {
-    border: 2px solid silver;
+.leaderboard div {
+    background-color: orange;
+    border-radius: 10px;
 }
 
-.leaderboard-entry.top3 {
-    border: 2px solid #FF7F50;
-}
-
-.leaderboard-entry.user-position {
-    border: 2px solid #5093e5;
-}
-
-.leaderboard-name {
-    margin-top: 5px;
-}
-
-.leaderboard-balance {
-    margin-top: -4px;
-}
-
-.leaderboard-place {
-    width: 37px;
-    margin-top: -3px;
-}
-
-.leaderboard-top {
-    margin-top: 10px;
-}
-
-.leaderboard-name_user {
-    margin-top: -7px;
-}
-
-.leaderboard-balance_user {
-    margin-top: -4px;
-}
-
-.coin {
-    margin-left: 5px;
-    width: 47px !important;
-    height: auto !important;
-}
-
-.quest_mark {
-    margin-left: 0px;
-    width: 40px !important;
-    height: auto !important;
-}
-
-.coin2 {
-    margin-left: 5px;
-    width: 18px !important;
-    height: auto !important;
-}
-
-.quest_mark2 {
-    margin-left: 5px;
-    width: 17px !important;
-    height: auto !important;
-}
-
-.leaderboard-balance img.quest_mark2 {
-    margin-left: 0px;
-}
-
-.leaderboard-balance img.coin2 {
-    margin-left: 2px;
-    margin-right: 8px;
-}
-
-.leaderboard-balance_user {
-    margin-bottom: 17px;
-}
-
-.leaderboard-balance_user img.quest_mark2 {
-    margin-left: 0px;
-}
-
-.leaderboard-balance_user img.coin2 {
-    margin-left: 2px;
-}
+/*container-center*/
 
 .container-center {
     width: 550px;
@@ -463,136 +140,12 @@ h3 {
     justify-content: space-between;
 }
 
-.flex-modals {
-    display: flex;
-    justify-content: space-between;
-}
-
-@media (max-width: 760px) {
-    .container-center {
-        width: 90%;
-        padding-top: 15px;
-        padding-bottom: 10px;
-    }
-
-    h4 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 27px;
-    }
-
-    .bonus-store__btn {
-        padding: 12px 18px;
-    }
-
-    .user-info img {
-        width: 50px;
-        height: 50px;
-    }
-
-    h6 {
-        position: relative;
-        bottom: -12px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-    .btn_add_quest {
-        padding: 12px 18px;
-    }
-
-    .btn_passive_inc {
-        width: 100%;
-        margin: 0;
-        position: relative;
-        bottom: -46px;
-    }
-
-    .leaderboard-entry {
-        padding: 0;
-    }
-
-    .icons {
-        margin: 0;
-        position: relative;
-        bottom: -4px;
-    }
-
-    .icon-label {
-        position: relative;
-        bottom: -1px;
-        margin: 5px;
-    }
-}
-
 @media (max-width: 480px) {
     .container-center {
         width: 95%;
-        padding-top: 15px;
-        padding-bottom: 10px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    .user-info img {
-        width: 45px;
-        height: 45px;
-        margin-right: 4px;
-    }
-
-    h2 {
-        font-size: 23px;
-    }
-
-    .bonus-store__btn {
-        padding: 12px 8px;
-    }
-
-    h5 {
-        font-size: 20px;
-        position: relative;
-        bottom: -12px;
-    }
-
-    h6 {
-        font-size: 20px;
-        position: relative;
-        bottom: -24px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .btn_add_quest {
-        padding: 12px 8px;
-    }
-
-    .btn_passive_inc {
-        padding: 12px 47px;
-    }
-
-    .leaderboard-entry {
-        padding: 0;
-    }
-
-    .icons {
-        margin: 0;
-        position: relative;
-        bottom: -4px;
-    }
-
-    .icon-label {
-        position: relative;
-        bottom: -1px;
-        margin: 5px;
+        padding-top: 7px;
+        padding-bottom: 3px;
     }
 }
 
-/* до 380 */
+/*container-center*/
