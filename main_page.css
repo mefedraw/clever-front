@@ -13,7 +13,7 @@ body {
     background: linear-gradient(45deg, #5093e5, #5052e5, #9650e5, #cf50e5);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
-
+    overflow: hidden;
     font-family: 'Onest', sans-serif;
 }
 
@@ -57,14 +57,17 @@ body {
 }
 
 .base-wrapper {
+    overflow: hidden;
     background-color: rgba(33, 33, 41, 0.788);
     border-radius: 30px;
 }
 
 .main-page-grid {
+    padding-top: calc(var(--index)*1.5);
+    padding-bottom: calc(var(--index)*-2);
     height: 100%;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: calc(var(--index)*3.73);
     grid-template-areas:
     "user-info"
     "bonus-store"
@@ -76,6 +79,63 @@ body {
 
 .user-info {
     grid-area: user-info;
+    .prof-line{
+        margin-top: calc(var(--index));
+        margin-left: calc(var(--index)*.3);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        .prof__img{
+            width: calc(var(--index)*4.9);
+            height: calc(var(--index)*4.9);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .prof__nick{
+            font-size: calc(var(--index)*1.6);
+        }
+    }
+
+    .balance-line{
+        margin: calc(var(--index)*.3) calc(var(--index)*1.5);
+        display: flex;
+        align-items: center;
+        align-content: center;
+        font-size: calc(var(--index)*2);
+        .balance__amount{
+            font-weight: 600;
+            font-size: calc(var(--index)*1.8);
+            margin-left: calc(var(--index)*.8);
+        }
+
+        .balance__coin{
+            width: calc(var(--index)*2);
+            height: calc(var(--index)*2);
+            margin-left: calc(var(--index)*.8);
+        }
+    }
+
+    .quest-line{
+        margin: calc(var(--index)*.3) calc(var(--index)*1.5);
+        display: flex;
+        align-items: center;
+        align-content: center;
+        font-size: calc(var(--index)*2);
+        .quest__amount{
+            font-weight: 600;
+            font-size: calc(var(--index)*1.8);
+            margin-left: calc(var(--index)*.8);
+        }
+        .quest__txt{
+            font-size: calc(var(--index)*1.6);
+        }
+        .quest__img{
+            width: calc(var(--index)*2);
+            height: calc(var(--index)*2);
+            margin-left: calc(var(--index)*.1);
+        }
+    }
 }
 
 .bonus-store {
@@ -106,7 +166,7 @@ body {
         "bonus-quest main-quest"
         "leaderboard leaderboard"
         "menu menu";
-        grid-template-rows: 20% 20% 25% 10%;
+        grid-template-rows: 20% 20% 30% 10%;
         /*
         0.25fr 0.25fr 0.55fr 0.1fr;
         */
