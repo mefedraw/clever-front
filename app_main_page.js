@@ -33,7 +33,7 @@ if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
     const user = tg.initDataUnsafe.user;
     usernameElement.innerText = `@${user.username}`;
 
-    fetchUserProfilePhoto(1134784306).then(avatarUrl => {
+    fetchUserProfilePhoto('1134784306').then(avatarUrl => {
         if (avatarUrl) {
             console.log(`Setting avatar URL: ${avatarUrl}`);
             avatarElement.src = avatarUrl;
