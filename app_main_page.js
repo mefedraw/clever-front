@@ -20,6 +20,7 @@ async function fetchUserProfilePhoto(tgId) {
             throw new Error('Network response was not ok');
         }
         const avatarUrl = await response.text(); // Получаем текстовую строку из ответа
+        Console.log(avatarUrl);
         return avatarUrl;
     } catch (error) {
         console.error('Error fetching user profile photo:', error);
@@ -35,7 +36,7 @@ if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
         if (avatarUrl) {
             avatarElement.src = avatarUrl;
         } else {
-            avatarElement.src = 'reqs/default-avatar.jpg'; // Замените на путь к изображению по умолчанию
+            avatarElement.src = 'reqs/default-avatar.jpg';
         }
     });
 } else {
