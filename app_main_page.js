@@ -7,40 +7,37 @@ tg.ready();
 const usernameElement = document.getElementById('username');
 const avatarElement = document.getElementById('avatar');
 
-// Функция для получения информации о пользователе
-function fetchUserProfilePhoto(userId) {
-    fetch(`/getUserProfilePhoto?userId=${userId}`)
-        .then(response => response.json())
-        .then(data => {
-            if (data.ok && data.result.photos.length > 0) {
-                const photos = data.result.photos;
-                const latestPhoto = photos[0]; // Берем последнюю обновленную фотографию
-                const highestResolutionPhoto = latestPhoto[latestPhoto.length - 1]; // Берем фотографию самого высокого разрешения
-                const fileId = highestResolutionPhoto.file_id;
-
-                fetch(`/getFile?fileId=${fileId}`)
-                    .then(response => response.json())
-                    .then(fileData => {
-                        if (fileData.ok) {
-                            const filePath = fileData.result.file_path;
-                            const fileUrl = `https://api.telegram.org/file/bot${tg.initDataUnsafe.user.bot_token}/${filePath}`;
-                            avatarElement.src = fileUrl;
-                        }
-                    });
-            }
-        });
-}
-
 window.addEventListener('resize', () => {
     document.body.style.height = window.innerHeight + 'px';
 });
 
 document.body.style.height = window.innerHeight + 'px';
 
+async function fetchUserProfilePhoto(tgId) {
+    try {
+        const response = await fetch(`https://localhost:44312/api/v1/auth/avatar?tgId=${tgId}`);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data.avatarUrl; // Предполагается, что сервер возвращает объект с полем avatarUrl
+    } catch (error) {
+        console.error('Error fetching user profile photo:', error);
+        return null;
+    }
+}
+
 if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
     const user = tg.initDataUnsafe.user;
     usernameElement.innerText = `@${user.username}`;
-    fetchUserProfilePhoto(user.id);
+
+    fetchUserProfilePhoto(user.id).then(avatarUrl => {
+        if (avatarUrl) {
+            avatarElement.src = avatarUrl;
+        } else {
+            avatarElement.src = 'reqs/default-avatar.jpg';
+        }
+    });
 } else {
-    usernameElement.innerText = 'Unable to retrieve user information.';
+    usernameElement.innerText = 'NickName Err';
 }

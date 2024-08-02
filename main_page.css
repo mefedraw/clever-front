@@ -84,7 +84,7 @@ body {
         margin-left: calc(var(--index)*.3);
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-content: center;
         .prof__img{
             width: calc(var(--index)*4.9);
@@ -93,6 +93,12 @@ body {
             flex-shrink: 0;
         }
         .prof__nick{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 150px;
+            justify-self: center;
+            align-self: center;
             font-size: calc(var(--index)*1.6);
         }
     }
